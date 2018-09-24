@@ -76,7 +76,18 @@ class ShopsController < ApplicationController
       @products = shop.products
       render json: @products
     else
-      render json: { error: "Could not find product"}
+      render json: { error: "Could not find shop"}
+    end
+  end
+
+  def orders
+    if Shop.exists?(id: params[:id])
+      # Obtain Shop
+      shop = Shop.find(params[:id])
+      @orders = shop.orders
+      render json: @orders
+    else
+      render json: { error: "Could not find shop"}
     end
   end
 end

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :shops do
   	member do
       get 'products'
+      get 'orders'
   	end
   end
 
