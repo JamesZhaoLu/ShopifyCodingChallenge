@@ -11,5 +11,5 @@ From there you can visit this [link](https://documenter.getpostman.com/view/3569
 - To "checkout" - you can update the order. This action recalculates the total cost of all the line_items. Use the URL: localhost:3000/orders?shop_names=&line_items_names=
 
 
-Thanks for giving me this challenge; I really was exciting and there is still much more that I want to implement such as a more friendly UX (using names instead of ids) and additional security though for the time being, this was fun!
+Thanks for giving me this challenge; I really was exciting and there is still much more that I want to implement such as a friendlier UX (using names instead of ids) and additional security though for the time being, this was fun!
 
