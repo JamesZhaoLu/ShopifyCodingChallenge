@@ -3,7 +3,7 @@
 
 Hey there! So here is my implmentation for the Shopify Coding Challenge!
 
-To get the API up and running you'll have to clone this directory, *git@github.com:JamesZhaoLu/ShopifyCodingChallenge.git* and use `rails server` to get the API up and running
+To get the API up and running you'll have to clone this directory, ```git@github.com:JamesZhaoLu/ShopifyCodingChallenge.git``` and use ```rails server``` to get the API up and running
 
 From there you can visit this [link](https://documenter.getpostman.com/view/3569996/RWaPtkqL) for documentation on how the API works! Though here is a *brief* overview:
 - To "create a new cart with a store" - create an order using the URL: localhost:3000/orders?shop_name=
