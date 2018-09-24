@@ -69,8 +69,14 @@ class ShopsController < ApplicationController
     render json: @shops
   end
 
-  private
-    def shop_params
-      # Required for additional security if data submitted through forms
+  def products
+    if Shop.exists?(id: params[:id])
+      # Obtain Shop
+      shop = Shop.find(params[:id])
+      @products = shop.products
+      render json: @products
+    else
+      render json: { error: "Could not find product"}
     end
+  end
 end

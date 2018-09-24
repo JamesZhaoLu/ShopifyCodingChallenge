@@ -80,4 +80,15 @@ class OrdersController < ApplicationController
     @orders = Order.all
     render json: @orders
   end
+
+  def line_items
+    if Order.exists?(id: params[:id])
+      # Find Order
+      order = Order.find(params[:id])
+      @line_items = order.line_items
+      render json: @line_items
+    else
+      render json: { error: "Could not find Order" }
+    end
+  end
 end
